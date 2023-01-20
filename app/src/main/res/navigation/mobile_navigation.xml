@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/mainMenuFragment">
+
+    <fragment
+        android:id="@+id/mainMenuFragment"
+        android:name="com.ulch.rickandmorty.ui.main_menu.MainMenuFragment"
+        android:label="MainMenuFragment">
+        <action
+            android:id="@+id/to_character_list_fragment"
+            app:destination="@id/characterListFragment" />
+        <action
+            android:id="@+id/to_locationFragment"
+            app:destination="@id/locationFragment" />
+        <action
+            android:id="@+id/to_episodeFragment"
+            app:destination="@id/episodeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/characterListFragment"
+        android:name="com.ulch.rickandmorty.ui.character_list.CharacterListFragment"
+        android:label="CharacterListFragment">
+<!--        <action-->
+<!--            android:id="@+id/to_transactionFragment"-->
+<!--            app:destination="@id/transactionFragment">-->
+
+<!--        </action>-->
+<!--        <argument-->
+<!--            android:name="data"-->
+<!--            app:argType="com.printec.assignment.models.DataModel" />-->
+    </fragment>
+    <fragment
+        android:id="@+id/locationFragment"
+        android:name="com.ulch.rickandmorty.ui.locationl_list.LocationListFragment"
+        android:label="LocationListFragment">
+<!--        <action-->
+<!--            android:id="@+id/to_notificationFragment"-->
+<!--            app:destination="@id/notificationFragment" />-->
+<!--        <argument-->
+<!--            android:name="data"-->
+<!--            app:argType="com.printec.assignment.models.DataModel" />-->
+
+    </fragment>
+    <fragment
+        android:id="@+id/episodeFragment"
+        android:name="com.ulch.rickandmorty.ui.episode_list.EpisodeListFragment"
+        android:label="EpisodeListFragment">
+<!--        <action-->
+<!--            android:id="@+id/to_mainMenuFragment"-->
+<!--            app:popUpTo="@id/mainMenuFragment" />-->
+<!--        <argument-->
+<!--            android:name="data"-->
+<!--            app:argType="com.printec.assignment.models.DataModel" />-->
+
+    </fragment>
+<!--    <fragment-->
+<!--        android:id="@+id/settingsFragment"-->
+<!--        android:name="com.printec.assignment.ui.settings.SettingsFragment"-->
+<!--        android:label="SettingsFragment">-->
+<!--        <action-->
+<!--            android:id="@+id/action_to_mainMenuFragment"-->
+<!--            app:destination="@id/mainMenuFragment" />-->
+<!--    </fragment>-->
+<!--    <fragment-->
+<!--        android:id="@+id/refundFragment"-->
+<!--        android:name="com.printec.assignment.ui.refund.RefundFragment"-->
+<!--        android:label="RefundFragment">-->
+<!--        <action-->
+<!--            android:id="@+id/to_amountFragment"-->
+<!--            app:destination="@id/amountFragment" />-->
+<!--        <argument-->
+<!--            android:name="data"-->
+<!--            app:argType="com.printec.assignment.models.DataModel" />-->
+<!--    </fragment>-->
+</navigation>
